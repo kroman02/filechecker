@@ -1,0 +1,547 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+body {
+	background-color: #ededed;
+	font-family: sans-serif;
+}
+@import url(//db.onlinewebfonts.com/c/da333251c966d4ed2f0a7b7de061254f?family=FlexoW01-Demi);
+
+@font-face {
+	
+font-family: "FlexoW01-Demi"; src: url("//db.onlinewebfonts.com/t/da333251c966d4ed2f0a7b7de061254f.eot"); src: 
+url("//db.onlinewebfonts.com/t/da333251c966d4ed2f0a7b7de061254f.eot?#iefix") format("embedded-opentype"), 
+url("//db.onlinewebfonts.com/t/da333251c966d4ed2f0a7b7de061254f.woff2") format("woff2"), 
+url("//db.onlinewebfonts.com/t/da333251c966d4ed2f0a7b7de061254f.woff") format("woff"), 
+url("//db.onlinewebfonts.com/t/da333251c966d4ed2f0a7b7de061254f.ttf") format("truetype"), 
+url("//db.onlinewebfonts.com/t/da333251c966d4ed2f0a7b7de061254f.svg#FlexoW01-Demi") format("svg"); }
+/* HEADER STYLING */
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #fff;
+	height: 168px;
+	justify-content: space-between;
+
+	
+}
+.logo {
+	margin-left: 20%;
+}
+.utilities {
+	margin-right: 20%;
+	display: flex;
+}
+.topheader {
+	background-color: #58505e;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	height: 40px;
+	
+}
+.topheader p {
+	margin-right: 20%;
+	display: flex;
+	align-items: center;
+}
+header nav {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: FlexoW01-Demi, sans-serif;
+	color: grey;
+}
+header nav ul {
+	display: flex;
+	width: 100%;
+	list-style: none;
+	justify-content: center;
+	
+	
+}
+header nav a {
+	text-decoration: none;
+	padding: 0em 0.5em 0em 0.5em;
+	
+}
+header nav a:link  {
+	color: grey;
+}
+header nav a:visited  {
+	color: grey;
+}
+header nav a:hover  {
+	color: #fd4067;
+}
+	
+header nav ul li {
+	padding: 0em 0.0em 0em 0.0em; 
+	display: inline-block;
+	border-right: 1px solid grey;
+	
+}
+header nav ul li:last-child {
+	border-right: none;
+}
+
+
+/* END HEADER STYLING */
+
+
+/* FORM STYLING */
+form input {
+	
+}
+
+input[type=checkbox]:not(old),
+input[type=radio]:not(old){
+  width   : 28px;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+}
+
+
+input[type=radio   ]:not(old) + label{
+  display: inline-block;
+  margin-left: -28px;
+  padding-left: 28px;
+  background: url('checks2.png') no-repeat 0 0;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+input[type=radio]:not(old):checked + label{
+  background-position : 0 -48px;
+  cursor: pointer;
+}
+
+#rb4 {
+	margin-bottom: 40px;
+}
+
+.max{
+	padding: 5px;
+	color: grey;
+}
+
+.rb {
+	padding: 1em;
+	margin-bottom: 10px;
+}
+
+input[type=submit] {
+  background-color: #fd4067;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  /*margin: 4px 2px;*/
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+input[type=submit]:hover {
+background-color: #d42f51;
+}
+
+/*MAIN STYLING */
+main {
+	background-color: #fff;
+	margin-left: 30%;
+	margin-right: 30%;
+	min-height: 600px;
+	margin-top: 5em;
+	border: 1px solid #aaaaaa;
+	border-radius: 10px;
+	
+}
+
+
+
+.errors {
+	background-color: #f4baba;
+	margin: 3% 10% 3% 10%;
+	
+	color: #811717;
+	border: 1px solid #811717;
+	border-radius: 10px;
+}
+
+.issues {
+	background-color: #ffea94;
+	margin: 3% 10% 3% 10%;
+	color: #605114;
+	border: 1px solid #d9c56d;
+	border-radius: 10px;
+}
+
+.checks {
+	background-color: #d4ffbb;
+	margin: 3% 10% 3% 10%;
+	color: #29631b;
+	border: 1px solid #76b058;
+	border-radius: 10px;
+}
+
+
+#results p {
+	padding: 0.5em;
+	margin: 1em;
+}
+
+main .section_header {
+	background-color: #332b75;
+	height: 55px;
+	color: #fff;
+	text-align: center-left;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 9px 9px 0 0;
+	
+	
+}
+
+
+.main_title {
+	font-weight: bold;
+	margin-left: 10%;
+	
+}
+
+.introduction{
+	margin: 3% 10% 3% 10%;
+}
+
+
+#mainform {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.sequence{
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+	justify-content: center;
+}
+.sequence img{
+	width: 80%;
+	opacity: 0.6;
+}
+.error-field {
+	margin-left: 10%;
+	margin-right: 10%;
+	color: red;
+	font-weight: medium;
+}
+
+.steps{
+	font-size: 1.2em;
+	color: #332b75;
+}
+
+.icon {
+	margin-right: 10px;
+}
+
+.note{
+	font-weight: bold;
+}
+.buttons {
+	display: flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+}
+.button {
+	display: flex;
+	
+}
+.button a {
+	width: 100%;
+	margin-bottom: 50px;
+	background-color: #a6a6a6;
+	padding: 0.7em;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	font-weight: bold;
+}
+.buttons a {
+	width: 50%;
+	margin-bottom: 50px;
+	margin-top: 25px;
+	background-color: #fd4067;
+	padding: 16px 32px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	font-weight: bold;
+}
+.buttons a:last-child {
+	margin-left: 10px;
+}
+.buttons a:first-child {
+	margin-right: 10px;
+	background-color: #a6a6a6;
+}
+.buttons a:last-child:hover{
+	background-color: #d42f51
+}
+.buttons a:first-child:hover {
+	
+	background-color: grey;
+}
+.confirm {
+	color: #332b75;
+}
+.preview{
+	margin-left: 10%;
+	margin-right: 10%;
+	display:flex;
+	justify-content: center;
+}
+.preview h3 {
+	color: #332b75;
+	margin-bottom: 5px;
+}
+.preview section {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.preview section img{
+	width: 100%;
+	
+}
+.preview section:first-child{
+	
+}
+.preview section:last-child{
+	
+	margin-left: 20px;
+}
+	
+.prev {
+	font-weight: bold;
+}
+
+footer {
+	display: flex;
+	height: 60px;
+	background-color: #565656;
+	position: ;
+	bottom: 0;
+	width: 100%;
+	margin-top: 100px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.conf {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 200px;
+	margin-top: 100px;
+}
+
+#contactform{
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+	flex-direction: column;
+}
+.thanks {
+	font-size: 0.7em;
+	margin-bottom: 500px;
+}
+#contactform input, #contactform textarea {
+	padding: 0.7em;
+	border-radius: 10px;
+}
+#contactform label {
+	font-weight: bold;
+	color: #332b75;
+	margin-bottom: 5px;
+}
+#uemail{
+	width: 50%;
+}
+
+.er_list{
+	margin-bottom: ;
+}
+
+/*RESPONSIVE DESIGN FROM HERE */
+@media screen and (max-width: 1600px) {
+main {
+	
+	margin-left: 20%;
+	margin-right: 20%;
+	
+	
+	
+}
+}
+
+
+@media screen and (max-width: 1100px) {
+
+body {
+	font-size: 0.8em;
+}
+
+.logo {
+	margin-left: 5%;
+}
+.utilities {
+	margin-right: 5%;
+	display: flex;
+}
+nav {
+	font-size: 0.9em;
+}
+
+main {
+	
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	
+	
+}
+.form_container {
+	width: 100%;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 769px) {
+
+header {
+	
+	height: 100px;
+
+}
+	
+
+header nav a {
+	
+	display: none;
+}
+
+.main_title {
+	font-weight: bold;
+	margin-left: 10%;
+	
+}
+
+.logo {
+	margin-left: 5%;
+	font-size: 0.6em;
+}
+
+footer {
+	margin-top: 0;
+}
+
+
+main .section_header {
+	background-color: #332b75;
+	height: 55px;
+	color: #fff;
+	text-align: center-left;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 0px 0px 0 0;
+	
+	
+}
+
+main {
+	
+	margin-left: 0%;
+	margin-right: 0%;
+	min-height: 600px;
+	margin-top: 0;
+	border: 0px solid #aaaaaa;
+	border-radius: 0px;
+	
+}
+.form_container {
+	width: 100%;
+}
+.sequence {
+	margin-right: 5%;
+	margin-left: 5%;
+	
+}
+.sequence img {
+	width: 90%;
+	height: 90%;
+	
+}
+.buttons {
+	
+	flex-direction: column;
+}
+}
+	
+
+
+
+
+
+@media screen and (max-width: 375px) {
+
+
+input[type=submit]:hover {
+background-color: red;
+}
+header nav a {
+	
+	display: none;
+}
+
+main {
+	
+	margin-left: 0%;
+	margin-right: 0%;
+	min-height: 600px;
+	margin-top: 0em;
+	border: 1px solid #aaaaaa;
+	border-radius: 0px;
+	
+}
+	
+	
+	
+}
+.form_container {
+	width: 100%;
+}
+}
+
+
+
+
+
